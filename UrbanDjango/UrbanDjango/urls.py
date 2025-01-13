@@ -19,7 +19,7 @@ from django.urls import path
 # from task2.views import index_func_template, index_class_template
 from task2.views import index
 from task2.views import func_template, class_template
-from task3.views import platform
+from task3.views import platform, games, cart
 
 from django.views.generic import TemplateView
 
@@ -30,5 +30,7 @@ urlpatterns = [
     path('func/', func_template),
     path('class/', class_template.as_view()),
 
-    path('platform/', platform)
+    path('platform/', platform),
+    path('games/', games),
+    path('cart/', cart)
 ]
