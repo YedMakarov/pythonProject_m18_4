@@ -17,15 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # from task2.views import index_func_template, index_class_template
+from task2.views import index
 from task2.views import func_template, class_template
 
 from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('func/', index_func_template),
-    path('func/', func_template),
+    path('', index),
 
-    # path('class/', index_class_template.as_view()),
+    path('func/', func_template),
     path('class/', class_template.as_view()),
 ]

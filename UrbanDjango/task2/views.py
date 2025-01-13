@@ -5,17 +5,13 @@ from django.views.generic import TemplateView
 
 # Create your views here.
 
-# def index_func_template(request):
-#     return render(request, 'index_func_template.html')
-#
-#
-# class index_class_template(TemplateView):
-#     template_name = 'index_class_template.html'
+def index(request):
+    return render(request, 'index.html')
 
 
 def func_template(request):
-    return render(request, 'func_template.html')
+    return render(request, 'second_task/func_template.html')
 
 
 class class_template(TemplateView):
-    template_name = 'class_template.html'
+    template_name = 'second_task/class_template.html'
