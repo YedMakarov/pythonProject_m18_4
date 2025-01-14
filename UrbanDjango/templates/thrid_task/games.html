@@ -6,10 +6,20 @@
 </head>
 <body>
     <ul>
+<!--
         <li>Atomic Heart <button>Купить</button></li>
         <li>Cyberpunr 2077 <button>Купить</button></li>
         <li>PayDay 2 <button>Купить</button></li>
+-->
+        <li>{{ game1 }}<button>Купить</button></li>
+        <li>{{ game2 }}<button>Купить</button></li>
+        <li>{{ game3 }}<button>Купить</button></li>
     </ul>
+<!--
     <button><a href="/platform/">Вернуться обратно</a></button>
+-->
+    <form action="/platform/" method="get">
+        <button type="submit">Вернуться обратно</button>
+    </form>
 </body>
 </html>
