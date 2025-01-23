@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <header>
+        {% block pagename %}
+        <h1>Welcome to My Site</h1>
+        {% endblock %}
+    </header>
+
+    <menu>
+        {% block menu %}
+        <h2><a href="#">Главная</a></h2>
+        <h2><a href="/games/">Магазин</a></h2>
+        <h2><a href="/cart/">Корзина</a></h2>
+        {% endblock %}
+    </menu>
+
+<!--
+    <ul>
+        <li>Atomic Heart <button>Купить</button></li>
+        <li>Cyberpunr 2077 <button>Купить</button></li>
+        <li>PayDay 2 <button>Купить</button></li>
+    </ul>
+-->
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>
